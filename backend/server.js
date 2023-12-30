@@ -90,7 +90,7 @@ app.use(cookieParser())
 app.use(express.json())
 
 const corsOptions = {
-    origin: "https://mern-ai-content-generator-mium.vercel.app",
+    origin: ["http://localhost:5173", "https://mern-ai-content-generator-mium.vercel"],
     credentials: true,
 }
 app.use(cors(corsOptions))
