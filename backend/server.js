@@ -89,7 +89,7 @@ cron.schedule("0 0 1 * * *", async () => {
 app.use(cookieParser())
 app.use(express.json())
 const corsOptions = {
-    origin: ["http://localhost:5173", "https://mern-ai-content-generator-mium.vercel.app/"],
+    origin: "*",
     credentials: true,
 }
 app.use(cors(corsOptions))
